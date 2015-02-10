@@ -20,3 +20,5 @@ if __name__ == '__main__':
     with open('data/rosalind_prot.txt') as file:
         sequence = file.read()
     print translate(sequence)
+
+print translation_map
