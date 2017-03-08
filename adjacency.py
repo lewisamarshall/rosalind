@@ -1,3 +1,4 @@
+from __future__ import print_function
 from read_fasta import read_fasta
 
 def adjacency(sequences, k):
@@ -12,4 +13,4 @@ def adjacency(sequences, k):
 if __name__ == '__main__':
     edges =  adjacency(read_fasta('data/rosalind_grph.txt'), 3)
     for pair in edges:
-        print '{} {}'.format(*pair)
+        print('{} {}'.format(*pair))
